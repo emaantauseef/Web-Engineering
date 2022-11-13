@@ -1,0 +1,141 @@
+<html>
+<head>
+<style> 
+.myDiv {
+  border: 2px outset black;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;    
+  text-align: center;
+}
+.myDiv:hover { 
+  width: 300x;
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+div.rotate {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  transition-delay: 1s;
+}
+
+div.rotate:hover { 
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+.opacity{
+  filter: opacity(30%);
+}
+.blur{
+    filter: blur(3px);
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.text_shadow {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+div.shadow_img {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1 style = "text-align: center;">Lab # 04</h1>
+
+<h2> Task # 1</h2>
+<div class="myDiv">
+  <p>The Department of Computer Science was setup with a vision to en-kindle some of the brightest technical minds of the country and equip them with all skills.</p>
+</div>
+
+<h2> Task # 2</h2>
+<div class="rotate"></div>
+
+<h2> Task # 3</h2>
+<p style="font-size: 18px;"> <b> Grayscale Filter: </b></p>
+<img class="grayscale" src="ntu.jpg" width="500" height="300">
+
+<p style="font-size: 18px;" > <b>Opacity:</b></p> 
+<img class="opacity" src="ntu.jpg" width="500" height="300">
+
+<p style="font-size: 18px;" > <b>Blur:</b></p> 
+<img class="blur" src="ntu.jpg" width="500" height="300">
+
+<h2> Task # 4</h2>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="ntu.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="ntu.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="ntu.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="ntu.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+ 
+<h2> Task # 5</h2>
+<h1 class= "text_shadow">Text-shadow effect!</h1>
+
+<div class="shadow_img">
+  <img src="ntu.jpg" style="width:100%">
+  <div class="container">
+    <p>National Textile University</p>
+  </div>
+</div>
+
+</body>
+</html>

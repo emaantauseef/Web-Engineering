@@ -1,0 +1,251 @@
+<html>
+<head>
+<style>
+p.hometown { 
+  background: yellow;
+}
+
+#firstname {
+  background-color: yellow;
+}
+
+p.element{
+  background-color: yellow;
+}
+
+p.intro {
+  background-color: yellow;
+}
+
+h2, p.elementselector {
+  background-color: yellow;
+}
+
+a[target] {
+  background-color: yellow;
+}
+
+a[target=_blank] {
+  background-color: yellow;
+}
+
+a:active {
+  background-color: yellow;
+}
+
+p.after::after { 
+  content: " - Remember this";
+}
+
+p.before::before {
+  content: "Read this -";
+}
+
+input:checked {
+  height: 50px;
+  width: 50px;
+}
+
+input[type=text]:enabled {
+  background: #ffff00;
+}
+input[type=text]:disabled {
+  background: #dddddd;
+}
+
+p:empty {
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+}
+
+p:first-child {
+  background-color: yellow;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+p:lang(it) { 
+  background: yellow;
+}
+
+::marker { 
+  color: red;
+}
+
+input:read-only {
+  background-color: yellow;
+}
+
+input:required {
+  background-color: yellow;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the .class selector</h1>
+
+<p>My name is Donald.</p>
+<p class="hometown">I live in Ducksburg.</p>
+
+<p>My name is Dolly.</p>
+<p class="hometown">I also live in Ducksburg.</p>
+
+<h1>Demo of the #id selector</h1>
+
+<div class="intro">
+  <p id="firstname">My name is Donald.</p>
+  <p id="hometown">I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+<h1>Demo of the element selector</h1>
+
+<div>
+  <p  class="element">My name is Donald.</p> 
+  <p  class="element">I live in Duckburg.</p> 
+</div>
+
+<p  class="element">My best friend is Mickey.</p>
+
+<h1>Demo of the element.class selector</h1>
+
+<div class="intro">
+  <p>My name is Donald.</p>
+  <p>I live in Duckburg.</p>
+</div>
+
+<p>My best friend is Mickey.</p>
+
+<p class="intro">My best friend is Mickey.</p>
+
+<h1>Demo of the element, element selector</h1>
+
+<h2>Welcome to My Homepage</h2>
+
+<div>
+  <p class = "elementselector">My name is Donald.</p>
+  <p class = "elementselector">I live in Duckburg.</p>
+</div>
+
+<p class = "elementselector">My best friend is Mickey.</p>
+
+<h1>Demo of the [attribute] selector</h1>
+
+<p>Links with a target attribute is styled with a yellow background:</p>
+
+<a href="https://ntu.edu.pk/">NTU.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+<h1>Demo of the [attribute=value] selector</h1>
+
+<p>Links with target="_blank" is styled with a yellow background:</p>
+
+<a href="https://ntu.edu.pk/">NTU.com</a><br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.microsoft.com" target="_blank">Microsoft.com</a>
+
+<h1>Demo of the :active selector</h1>
+
+<a href="https://www.w3schools.com">W3schools.com</a><br>
+<a href="https://www.w3schools.com/html/">HTML</a><br>
+<a href="https://www.w3schools.com/css/">CSS</a>
+
+<p><b>Note:</b> The :active selector styles the active link.</p>
+
+<h1>Demo of the ::after selector</h1>
+
+<p class= "after">My name is Emaan</p>
+<p class= "after">I live in Faisalabad</p>
+
+<h1>Demo of the ::before selector</h1>
+
+<p class= "before">My name is Donald</p>
+<p class= "before">I live in Ducksburg</p>
+
+<h1>Demo of the :checked selector</h1>
+<form action="">
+    <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+    <input type="radio" value="female" name="gender"> Female<br>
+    <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+    <input type="checkbox" value="Car"> I have a car 
+  </form>
+  
+  <h1>Demo of the :disabled selector</h1>
+  <form action="">
+    First name: <input type="text" value="Mickey"><br>
+    Last name: <input type="text" value="Mouse"><br>
+    Country: <input type="text" disabled="disabled" value="Disneyland">
+  </form>
+
+  <h1>Demo of the :empty selector</h1>
+  <p></p>
+<p>A paragraph.</p>
+<p>Another paragraph.</p>
+
+<h1>Demo of the :first-child selector</h1>
+<div>
+  <p>This paragraph is the first child of its parent (div).</p>
+  <p>This paragraph is not the first child of its parent (div).</p>
+</div>
+
+<h1>Demo of the :hover selector</h1>
+
+<p>The :hover selector style links on mouse-over:</p>
+
+<a href="https://ntu.edu.pk/">ntu.com</a>
+<a href="https://www.wikipedia.org">wikipedia.org</a>
+
+<h1>Demo of the :lang selector</h1>
+
+<p>I live in Italy.</p>
+<p lang="it">Ciao bella!</p>
+
+<h1>Demo of the ::marker selector</h1>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+<h1>Demo of the :read-only selector</h1>
+
+<p>The :read-only selector selects form elements with a "readonly" attribute:</p>
+
+<p>A normal input element:<br><input value="hello"></p>
+
+<p>A readonly input element:<br><input readonly value="hello"></p>
+
+<h1>Demo of the :required selector</h1>
+
+<p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+
+<p>The :required selector selects form elements with a "required" attribute.</p>
+
+<h1>Demo of the ::selection selector</h1>
+<h3>Select some text on this page:</h3>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+</body>
+</html>
